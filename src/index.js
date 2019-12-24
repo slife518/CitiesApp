@@ -9,7 +9,7 @@ import {createAppContainer} from 'react-navigation'
 import {createStackNavigator} from  'react-navigation-stack'
 import {createBottomTabNavigator} from 'react-navigation-tabs'
 
-const CitiesNav = createStackNavigator({
+const CitiesNav = createStackNavigator({   
         Cities : {screen : Cities}, 
         City : {screen : City}
     }, 
@@ -22,5 +22,14 @@ const CitiesNav = createStackNavigator({
         }
 })
 
+
+const AppTab = createBottomTabNavigator({
+    Cities : {screen : CitiesNav }, 
+    AddCity : {screen : AddCity}
+})
+
+const Tabs = createAppContainer(AppTabs)
+
+expert default Tabs
 
 
