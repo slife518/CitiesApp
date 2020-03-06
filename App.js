@@ -11,7 +11,7 @@ import Tabs from './src';
 
 export default class App extends Component{
   state = {
-    cities: []
+    cities: [] 
   }
   addCity = (city) =>{
     const cities = this.state.cities
